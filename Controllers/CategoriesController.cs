@@ -117,6 +117,7 @@ namespace DigiBlog.Api.Controllers
 		{
 			if (string.IsNullOrWhiteSpace(id))
 			{
+				var sonarCloudTest = "Sonar Cloud Test String";
 				logger.LogError(LoggingEvents.DeleteItem, "Invalid request!");
 				return BadRequest("Invalid request!");
 			}
